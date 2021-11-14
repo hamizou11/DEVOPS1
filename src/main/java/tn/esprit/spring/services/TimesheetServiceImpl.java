@@ -38,7 +38,7 @@ public class TimesheetServiceImpl implements ITimesheetService {
 		return mission.getId();
 	}
     
-	public void affecterMissionADepartement(int missionId, int depId) {
+	public boolean affecterMissionADepartement(int missionId, int depId) {
 		logger.info("Begin affect mission to department : ");
 		Optional<Mission> mission = missionRepository.findById(missionId);
 		Optional<Departement> dep = deptRepoistory.findById(depId);
@@ -50,25 +50,41 @@ public class TimesheetServiceImpl implements ITimesheetService {
 			missionVal.setDepartement(depVal);
 			missionRepository.save(missionVal);
 			logger.info("Mission affected to department successfully.");
+			return true;
 		} else {
 			logger.error("Mission or department not found !");
+			return false;
 		}
 		
 	}
 
-	public void ajouterTimesheet(int missionId, int employeId, Date dateDebut, Date dateFin) {
+	public Timesheet ajouterTimesheet(int missionId, int employeId, Date dateDebut, Date dateFin) {
 		logger.info("Begin adding timesheet : ");
-		TimesheetPK timesheetPK = new TimesheetPK();
-		timesheetPK.setDateDebut(dateDebut);
-		timesheetPK.setDateFin(dateFin);
-		timesheetPK.setIdEmploye(employeId);
-		timesheetPK.setIdMission(missionId);
 		
+		logger.info("Creating timesheetPK : ");
+		TimesheetPK timesheetPK = new TimesheetPK();
+		
+		timesheetPK.setDateDebut(dateDebut);
+		logger.debug("TimesheetPK DateDebut set to : "+timesheetPK.getDateDebut());
+		
+		timesheetPK.setDateFin(dateFin);
+		logger.debug("TimesheetPK DateFin set to : "+timesheetPK.getDateFin());
+		
+		timesheetPK.setIdEmploye(employeId);
+		logger.debug("TimesheetPK IdEmploye set to : "+timesheetPK.getIdEmploye());
+		
+		timesheetPK.setIdMission(missionId);
+		logger.debug("TimesheetPK IdMission set to : "+timesheetPK.getIdMission());
+		
+		logger.info("Creating timesheet variable ...");
 		Timesheet timesheet = new Timesheet();
 		timesheet.setTimesheetPK(timesheetPK);
+		logger.debug("Timesheet timesheetPK set to : "+timesheet.getTimesheetPK().toString());
 		timesheet.setValide(false); //par defaut non valide
 		timesheetRepository.save(timesheet);
 		
+		logger.info("Timesheet saved successfully.");
+		return timesheet;
 	}
 
 }
