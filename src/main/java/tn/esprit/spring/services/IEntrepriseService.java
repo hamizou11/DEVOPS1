@@ -2,6 +2,7 @@ package tn.esprit.spring.services;
 
 import java.util.List;
 
+import javassist.NotFoundException;
 import tn.esprit.spring.entities.Departement;
 import tn.esprit.spring.entities.Entreprise;
 
@@ -13,5 +14,5 @@ public interface IEntrepriseService {
 	List<String> getAllDepartementsNamesByEntreprise(int entrepriseId);
 	public void deleteEntrepriseById(int entrepriseId);
 	public void deleteDepartementById(int depId);
-	public Entreprise getEntrepriseById(int entrepriseId);
+	public Entreprise getEntrepriseById(int entrepriseId) throws NotFoundException;
 }

@@ -3,8 +3,7 @@ package tn.esprit.spring.entities;
 import java.io.Serializable;
 import java.util.List;
 
-
-import javax.persistence.Entity;
+import javax.persistence.Embeddable;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
@@ -22,7 +21,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 
-@Entity
+@Embeddable
 public class Employe implements Serializable {
 	
 	private static final long serialVersionUID = -1396669830860400871L;

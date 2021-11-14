@@ -3,14 +3,14 @@ package tn.esprit.spring.entities;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.persistence.Entity;
+import javax.persistence.Embeddable;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-@Entity
+@Embeddable
 public class Mission implements Serializable {
 
 	private static final long serialVersionUID = -5369734855993305723L;

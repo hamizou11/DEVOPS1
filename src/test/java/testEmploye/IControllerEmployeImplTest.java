@@ -1,20 +1,20 @@
-package TestEmploye;
+package testEmploye;
 import org.junit.Test;
 import tn.esprit.spring.services.*;
 
+import java.util.Collections;
 import java.util.List;
 
 import org.junit.Assert;
-import org.junit.Test;
 
 import tn.esprit.spring.entities.Employe;
-import tn.esprit.spring.entities.Role;
 import tn.esprit.spring.controller.*;
+
 public class IControllerEmployeImplTest {
-	private static final Object EmployeById = null;
-	IControllerEmployeImpl IControllerEmployeImpl = new IControllerEmployeImpl();
+	IControllerEmployeImpl iControllerEmployeImpl = new IControllerEmployeImpl();
 	Employe e = new Employe();
-	EmployeServiceImpl EmployeServiceImpl = new EmployeServiceImpl();
+	EmployeServiceImpl employeServiceImpl = new EmployeServiceImpl();
+
 @Test
 public void testAjouterEmploye () {
 
@@ -23,12 +23,8 @@ public void testAjouterEmploye () {
 	e.setEmail("hamza.marwani@esprit.tn");
 	e.setActif(true);
 	Assert.assertNotNull("Name mustn't be null", e.getNom());
+	employeServiceImpl.ajouterEmploye(e);
 	
-	EmployeServiceImpl.ajouterEmploye( e);
-	
-	//IControllerEmployeImpl.ajouterEmploye(e);
-
-
 }
 
 @Test
@@ -39,15 +35,15 @@ public void testMettreAjourEmailByEmployeId () {
 	e.setEmail("hamza.marwani@esprit.tn");
 	e.setActif(true);
 	Assert.assertNotNull("email mustn't be null", e.getEmail());
-	EmployeServiceImpl.mettreAjourEmailByEmployeId(null,1);
+	employeServiceImpl.mettreAjourEmailByEmployeId(null,1);
 }
 			
 @Test
 public void testDeleteEmployeById() {
-	int EmployeById = 0 ;
+	int employeById = 0 ;
 	int c = e.getId();
-	Assert.assertEquals(EmployeById,c);
-	EmployeServiceImpl.deleteEmployeById(EmployeById);
+	Assert.assertEquals(employeById,c);
+	employeServiceImpl.deleteEmployeById(employeById);
 
 	
 }
@@ -55,7 +51,7 @@ public void testDeleteEmployeById() {
 
  public void testGetNombreEmployeJPQL() {
 	 
-	int k = EmployeServiceImpl.getNombreEmployeJPQL();
+	int k = employeServiceImpl.getNombreEmployeJPQL();
  Assert.assertNotEquals(k, 0);
 
  }
@@ -68,13 +64,13 @@ public void testDeleteEmployeById() {
 		int id = 0;
 		int employeId = e.getId();
 		Assert.assertEquals(employeId, id);
-		EmployeServiceImpl.getEmployePrenomById(employeId);
+		employeServiceImpl.getEmployePrenomById(employeId);
 		
 	}
 
  public List<Employe>  testGetAllEmployes() {
 	 
-	return null;
+	return Collections.emptyList();
 
  }
 
