@@ -8,10 +8,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
-
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 
 @Entity
@@ -28,10 +30,14 @@ public class Departement implements Serializable {
 	//@JsonManagedReference 
 	@JsonIgnore
 	@ManyToMany
-	private List<Employe> employes;
+	//private List<Employe> employes;
 	
-	//@OneToMany(mappedBy="departement")
+	@OneToMany(mappedBy="departement")
+	//private List<Mission> missions;
 	
+	@ManyToOne
+	private Entreprise entreprise;
+
 	public Departement() {
 		super();
 	}
@@ -56,15 +62,17 @@ public class Departement implements Serializable {
 		this.name = name;
 	}
 
-	public List<Employe> getEmployes() {
-		return employes;
-	}
 
-	public void setEmployes(List<Employe> employes) {
-		this.employes = employes;
-	}
 
 	
+
+	public Entreprise getEntreprise() {
+		return entreprise;
+	}
+
+	public void setEntreprise(Entreprise entreprise) {
+		this.entreprise = entreprise;
+	}
 	
 	
 
