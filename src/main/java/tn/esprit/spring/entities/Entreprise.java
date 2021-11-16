@@ -44,6 +44,11 @@ public class Entreprise implements Serializable{
 		this.raisonSocial = raisonSocial;
 	}
 
+	public Entreprise(EntrepriseRequest ssiiConsulting) {
+		this.name=ssiiConsulting.getName();
+		this.raisonSocial=ssiiConsulting.getRaisonSocial();
+	}
+
 	public int getId() {
 		return id;
 	}

@@ -1,5 +1,5 @@
 package tn.esprit.spring.entities;
 
-public enum Role{
+public enum Role {
 	CHEF_DEPARTEMENT, ADMINISTRATEUR, INGENIEUR, TECHNICIEN
 }
