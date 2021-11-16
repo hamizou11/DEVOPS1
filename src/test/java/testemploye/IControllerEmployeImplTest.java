@@ -47,12 +47,12 @@ public void testDeleteEmployeById() {
 
 	
 }
-@Test
+
 
  public void testGetNombreEmployeJPQL() {
 	 
 	int k = employeServiceImpl.getNombreEmployeJPQL();
- Assert.assertNotEquals(k, 0);
+	Assert.assertNotEquals(k, 0);
 
  }
 
