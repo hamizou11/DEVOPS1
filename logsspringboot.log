@@ -1,23 +1,23 @@
-2021-11-16 14:17:52.774  INFO 15920 --- [main] SpringBootCoreDataJpaMvcRest1Application : Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on DESKTOP-3RSQ2UA with PID 15920 (C:\Users\ucer\Documents\workspace-spring-tool-suite-4-4.12.1.RELEASE\DEVOPS1\target\classes started by ucer in C:\Users\ucer\Documents\workspace-spring-tool-suite-4-4.12.1.RELEASE\DEVOPS1)
-2021-11-16 14:17:52.801  INFO 15920 --- [main] SpringBootCoreDataJpaMvcRest1Application : No active profile set, falling back to default profiles: default
-2021-11-16 14:17:55.414  INFO 15920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2021-11-16 14:17:55.638  INFO 15920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191ms. Found 6 repository interfaces.
-2021-11-16 14:17:56.509  INFO 15920 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ce1878ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-11-16 14:17:57.778  INFO 15920 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-11-16 14:17:57.820  INFO 15920 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-11-16 14:17:57.821  INFO 15920 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
-2021-11-16 14:17:58.110  INFO 15920 --- [main] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring embedded WebApplicationContext
-2021-11-16 14:17:58.111  INFO 15920 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5148 ms
-2021-11-16 14:17:58.549  INFO 15920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-11-16 14:17:58.881  INFO 15920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-11-16 14:17:59.121  INFO 15920 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2021-11-17 20:26:45.208  INFO 8536 --- [main] SpringBootCoreDataJpaMvcRest1Application : Starting TimesheetSpringBootCoreDataJpaMvcRest1Application on DESKTOP-3RSQ2UA with PID 8536 (C:\Users\ucer\Documents\workspace-spring-tool-suite-4-4.12.1.RELEASE\DEVOPS1\target\classes started by ucer in C:\Users\ucer\Documents\workspace-spring-tool-suite-4-4.12.1.RELEASE\DEVOPS1)
+2021-11-17 20:26:45.244  INFO 8536 --- [main] SpringBootCoreDataJpaMvcRest1Application : No active profile set, falling back to default profiles: default
+2021-11-17 20:26:46.369  INFO 8536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-17 20:26:46.545  INFO 8536 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159ms. Found 6 repository interfaces.
+2021-11-17 20:26:47.101  INFO 8536 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc7eab9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-17 20:26:47.749  INFO 8536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-11-17 20:26:47.793  INFO 8536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-17 20:26:47.793  INFO 8536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-11-17 20:26:48.139  INFO 8536 --- [main] o.a.c.c.C.[.[localhost].[/SpringMVC]     : Initializing Spring embedded WebApplicationContext
+2021-11-17 20:26:48.140  INFO 8536 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2782 ms
+2021-11-17 20:26:48.529  INFO 8536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-17 20:26:49.199  INFO 8536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-17 20:26:49.377  INFO 8536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2021-11-16 14:17:59.293  INFO 15920 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
-2021-11-16 14:17:59.297  INFO 15920 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2021-11-16 14:17:59.812  INFO 15920 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2021-11-16 14:18:00.299  INFO 15920 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2021-11-16 14:18:00.577 ERROR 15920 --- [main] org.hibernate.AssertionFailure           : HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: Subclass has to be binded after it's mother class: tn.esprit.spring.entities.Mission
+2021-11-17 20:26:49.513  INFO 8536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-11-17 20:26:49.516  INFO 8536 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-17 20:26:50.033  INFO 8536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-17 20:26:50.455  INFO 8536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-11-17 20:26:50.767 ERROR 8536 --- [main] org.hibernate.AssertionFailure           : HHH000099: an assertion failure occurred (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: Subclass has to be binded after it's mother class: tn.esprit.spring.entities.Mission
 
 org.hibernate.AssertionFailure: Subclass has to be binded after it's mother class: tn.esprit.spring.entities.Mission
 	at org.hibernate.cfg.AnnotationBinder.getSuperEntity(AnnotationBinder.java:1264) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
@@ -51,14 +51,14 @@ org.hibernate.AssertionFailure: Subclass has to be binded after it's mother clas
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
 	at tn.esprit.spring.TimesheetSpringBootCoreDataJpaMvcRest1Application.main(TimesheetSpringBootCoreDataJpaMvcRest1Application.java:10) ~[classes/:na]
 
-2021-11-16 14:18:00.579  WARN 15920 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AssertionFailure: Subclass has to be binded after it's mother class: tn.esprit.spring.entities.Mission
-2021-11-16 14:18:00.579  INFO 15920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-11-16 14:18:00.592  INFO 15920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-11-16 14:18:00.596  INFO 15920 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2021-11-16 14:18:00.621  INFO 15920 --- [main] ConditionEvaluationReportLoggingListener : 
+2021-11-17 20:26:50.768  WARN 8536 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AssertionFailure: Subclass has to be binded after it's mother class: tn.esprit.spring.entities.Mission
+2021-11-17 20:26:50.769  INFO 8536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-17 20:26:50.785  INFO 8536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-17 20:26:50.803  INFO 8536 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-11-17 20:26:50.891  INFO 8536 --- [main] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-11-16 14:18:00.623 ERROR 15920 --- [main] o.s.boot.SpringApplication               : Application run failed
+2021-11-17 20:26:50.893 ERROR 8536 --- [main] o.s.boot.SpringApplication               : Application run failed
 
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AssertionFailure: Subclass has to be binded after it's mother class: tn.esprit.spring.entities.Mission
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.6.RELEASE.jar:5.1.6.RELEASE]
