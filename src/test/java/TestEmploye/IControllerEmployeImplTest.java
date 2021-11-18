@@ -15,9 +15,9 @@ public class IControllerEmployeImplTest {
 @Test
 public void testAjouterEmploye () {
 
-	e.setPrenom("xxx");
-	e.setNom("dihek");
-	e.setEmail("dihek.missaoui@gmail.com");
+	e.setPrenom("marwani");
+	e.setNom("hamza");
+	e.setEmail("hamza.marwani@esprit.tn");
 	e.setActif(true);
 	Assert.assertNotNull("Name mustn't be null", e.getNom());
 	
@@ -33,7 +33,7 @@ public void testMettreAjourEmailByEmployeId () {
 	
 	e.setNom("ali");
 	e.setPrenom("mohamed");
-	e.setEmail("dihek.missaoui@gmail.com");
+	e.setEmail("hamza.marwani@esprit.tn");
 	e.setActif(true);
 	Assert.assertNotNull("email mustn't be null", e.getEmail());
 	EmployeServiceImpl.mettreAjourEmailByEmployeId(null,1);
